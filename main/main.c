@@ -36,7 +36,7 @@ typedef struct
     esp_hidd_qos_param_t both_qos;
     uint8_t protocol_mode;
     SemaphoreHandle_t mouse_mutex;
-    xTaskHandle keyboard_task_hdl;
+    xTaskHandle_t keyboard_task_hdl;
     uint8_t buffer[8];
     int8_t x_dir;
 } local_param_t;
